@@ -9,28 +9,28 @@ import { Item } from './model/item.model';
 export class AppComponent {
   title = 'app';
   test: number = 689
-  selectedTask = null;
+  selectedItem = null;
 
-    masterTaskList: Task [] = [
-      new Task("Finish Homework", 3),
-      new Task("Not go crazy", 2),
-      new Task("Play Fortnite", 1)
+    masterItemList: Item [] = [
+      new Item("A left shoe", "Comfy", 250),
+      new Item("29 cents", "Useful", .71),
+      new Item("Cheeseburger with no cheese", "Tasty", 6000)
     ];
 
-  editTask(clickedTask){
-    console.log('editTask function')
-    console.log(clickedTask)
-    this.selectedTask = clickedTask
+  editItem(clickedItem){
+    console.log('editItem function')
+    console.log(clickedItem)
+    this.selectedItem = clickedItem
   }
 
-  addANewTask = null;
+  addANewItem = null;
   finish(){
-    console.log("finish adding a new task function");
-    this.addANewTask = true;
+    console.log("finish adding a new Item function");
+    this.addANewItem = true;
   }
 
   finishedEditing(){
-    console.log('finishTask function')
-    this.selectedTask = null;
+    console.log('finishItem function')
+    this.selectedItem = null;
   }
 }

@@ -7,29 +7,29 @@ import { Item } from '../model/item.model';
   styleUrls: ['./list-store-items.component.css']
 })
 export class ListStoreItemsComponent implements OnInit {
-  @Input() childTaskList: Task[];
+  @Input() childItemList: Item[];
   @Output() clickSender = new EventEmitter();
-  @Output() addTask = new EventEmitter();
+  @Output() addItem = new EventEmitter();
 
   constructor() { }
-  editButtonClicked(taskToEdit: Task){
+  editButtonClicked(ItemToEdit: Item){
     console.log("editButtonClicked function")
-    console.log(taskToEdit);
-    this.clickSender.emit(taskToEdit);
+    console.log(ItemToEdit);
+    this.clickSender.emit(ItemToEdit);
   }
 
   ngOnInit() {
   }
 
-  addNewTask(taskToAdd: Task){
-    console.log("addNewTask function")
-    this.addTask.emit(taskToAdd);
+  addNewItem(ItemToAdd: Item){
+    console.log("addNewItem function")
+    this.addItem.emit(ItemToAdd);
   }
 
-  priorityColor(currentTask){
-    if (currentTask.priority === 3 || currentTask.priority === '3'){
+  priorityColor(currentItem){
+    if (currentItem.priority === 3 || currentItem.priority === '3'){
       return "red";
-    } else if (currentTask.priority === 2 || currentTask.priority === '2'){
+    } else if (currentItem.priority === 2 || currentItem.priority === '2'){
       return "yellow";
     } else {
       return "green";

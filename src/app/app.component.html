@@ -1,3 +1,4 @@
 <div class="navBar">
   <h1>this is a test navBar</h1>
 </div>
+<app-list-store-items [childItemList]='masterItemList' (clickSender)="editItem($event)" (addItem)='finish($event)'></app-list-store-items>
