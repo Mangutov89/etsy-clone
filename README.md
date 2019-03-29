@@ -25,3 +25,36 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Project Documentation
+
+8am - 9am:
+general setup,
+deciding on a website to clone (etsy store page),
+writing up user stories,
+testing the real websites functionality
+
+## Notes
+
+Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?
+
+
+## User Stories
+
+
+Clone the etsy shop page.
+
+as a user and a customer, I want a list of the stores items
+if I reach the bottom of the page, and there are more items on the shop, I want to be able to list those items
+if I click a store item, I want to see more information about that items displayed on the page
+I want to be able to sort the items by price (low to high, high to low), newest, and 'featured'
+if I have a problem with the store, I want to be able to contact the stores owner
+I want to be able to rate an item that I purchased and leave a review
+if I really like this shop, I want to be able to favorite it
+if I really dislike a shop, I want to be able to report it
+
+
+as a user and a store owner, I want to be able to list my items on my store
+I want to be able to edit the information related to my item such as display an image for the item, edit the items price and whether or not it is on sale, and the items shipping method.
+I want to list my shop policies on my page, and be able to edit them if my policies change
