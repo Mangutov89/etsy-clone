@@ -52,6 +52,9 @@ lunch
 1:00pm - 2:00pm:
 further testing and implementation
 
+2:00pm - 3:00pm:
+implementing and reworking to-do list code
+
 ## Notes
 
 Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?
