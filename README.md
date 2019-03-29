@@ -39,6 +39,9 @@ testing the real websites functionality
 add more stories,
 add components list/diagram,
 
+9:45am - 10:45am:
+testing with Angular cli and modules
+
 ## Notes
 
 Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?
@@ -72,20 +75,20 @@ I want to list my shop policies on my page, and be able to edit them if my polic
 *This is a diagram of how I think the nesting of my planned components will/should look*
 
 Root {
-  listStoreItems{
-    showSaleItems{}
-    filterStoreItems{}
+  list-Store-Items{
+    show-Sale-Items{}
+    filter-Store-Items{}
   }
-  editStoreItems{
-    addStoreItem{}
-    removeStoreItem{}
+  edit-Store-Items{
+    add-Store-Item{}
+    remove-Store-Item{}
   }
-  showItemInfo{}
-  addReview{}
-  removeReview{}
-  favoriteStore{}
-  reportStore{}
-  listPolicies{}
-  editPolicies{}
-  contactStoreOwner{}
+  show-Item-Info{}
+  add-Review{}
+  remove-Review{}
+  favorite-Store{}
+  report-Store{}
+  list-Policies{}
+  edit-Policies{}
+  contact-Store-Owner{}
 }
