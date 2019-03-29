@@ -35,6 +35,10 @@ deciding on a website to clone (etsy store page),
 writing up user stories,
 testing the real websites functionality
 
+9:30am - 9:45am:
+add more stories,
+add components list/diagram,
+
 ## Notes
 
 Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?
@@ -64,3 +68,24 @@ I want to be able to remove reviews from my store if they are inaccurate or mali
 I want to list my shop policies on my page, and be able to edit them if my policies change
 
 ## Components
+
+*This is a diagram of how I think the nesting of my planned components will/should look*
+
+Root {
+  listStoreItems{
+    showSaleItems{}
+    filterStoreItems{}
+  }
+  editStoreItems{
+    addStoreItem{}
+    removeStoreItem{}
+  }
+  showItemInfo{}
+  addReview{}
+  removeReview{}
+  favoriteStore{}
+  reportStore{}
+  listPolicies{}
+  editPolicies{}
+  contactStoreOwner{}
+}
