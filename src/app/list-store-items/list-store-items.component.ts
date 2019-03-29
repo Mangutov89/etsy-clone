@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Task } from '../model/task.model';
+import { Item } from '../model/item.model';
 
 @Component({
   selector: 'app-list-store-items',
