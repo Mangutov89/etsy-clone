@@ -40,7 +40,17 @@ add more stories,
 add components list/diagram,
 
 9:45am - 10:45am:
-testing with Angular cli and modules
+testing with Angular cli and components
+
+10:45am - 12:00pm:
+more testing
+additional research on Angular
+
+12:00pm - 1:00pm:
+lunch
+
+1:00pm - 2:00pm:
+further testing and implementation
 
 ## Notes
 

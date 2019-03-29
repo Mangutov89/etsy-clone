@@ -1,6 +1,4 @@
 <div class="navBar">
   <h1>this is a test navBar</h1>
 </div>
-<div class="shopItems">
-  <p>{{test}}</p>
-</div>
+<app-task-list [childTaskList]='masterTaskList' (clickSender)="editTask($event)" (addTask)='finish($event)'></app-task-list>
