@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Project Documentation
 
-8am - 9am:
+8am - 9:30am:
 general setup,
 deciding on a website to clone (etsy store page),
 writing up user stories,
@@ -47,14 +47,20 @@ Clone the etsy shop page.
 
 as a user and a customer, I want a list of the stores items
 if I reach the bottom of the page, and there are more items on the shop, I want to be able to list those items
-if I click a store item, I want to see more information about that items displayed on the page
+if I click a store item, I want to see more information about that item displayed on the page, such as a description, options for the item (sizing, color) if any
+if I decide to buy an item, I want to be able to define how many of the item to buy
 I want to be able to sort the items by price (low to high, high to low), newest, and 'featured'
 if I have a problem with the store, I want to be able to contact the stores owner
 I want to be able to rate an item that I purchased and leave a review
 if I really like this shop, I want to be able to favorite it
 if I really dislike a shop, I want to be able to report it
+I want to see a version of the store that only lists the items on sale
 
 
 as a user and a store owner, I want to be able to list my items on my store
-I want to be able to edit the information related to my item such as display an image for the item, edit the items price and whether or not it is on sale, and the items shipping method.
+I want to be able to edit the information related to my item such as display an image for the item, edit the items price and whether or not it is on sale and the sale amount, the items shipping method, any options for the item (sizing, color)
+I want to be able to add the stock amount to the store, and have the store automatically stop allowing items to be purchased if they are out of stock
+I want to be able to remove reviews from my store if they are inaccurate or malicious
 I want to list my shop policies on my page, and be able to edit them if my policies change
+
+## Components
