@@ -12,27 +12,18 @@ export class ListStoreItemsComponent implements OnInit {
   @Output() addItem = new EventEmitter();
 
   constructor() { }
-  editButtonClicked(ItemToEdit: Item){
+  editButtonClicked(itemToEdit: Item){
     console.log("editButtonClicked function")
-    console.log(ItemToEdit);
-    this.clickSender.emit(ItemToEdit);
+    console.log(itemToEdit);
+    this.clickSender.emit(itemToEdit);
   }
 
   ngOnInit() {
   }
 
-  addNewItem(ItemToAdd: Item){
+  addNewItem(itemToAdd: Item){
     console.log("addNewItem function")
-    this.addItem.emit(ItemToAdd);
+    this.addItem.emit(itemToAdd);
   }
 
-  priorityColor(currentItem){
-    if (currentItem.priority === 3 || currentItem.priority === '3'){
-      return "red";
-    } else if (currentItem.priority === 2 || currentItem.priority === '2'){
-      return "yellow";
-    } else {
-      return "green";
-    }
-  }
 }

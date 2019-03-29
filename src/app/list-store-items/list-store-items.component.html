@@ -1,7 +1,7 @@
 <div class="item">
-  <p>{{item.name}}</p>
-  <p>{{item.description}}</p>
-  <p>{{item.price}}</p>
+  <p *ngFor="let currentItem of childItemList">{{currentItem.name}}</p>
+  <p *ngFor="let currentItem of childItemList">{{currentItem.description}}</p>
+  <p *ngFor="let currentItem of childItemList">{{currentItem.price}}</p>
   <p>this is a shop item</p>
   <button type="button" name="button">more info</button>
 </div>
