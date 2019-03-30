@@ -87,21 +87,25 @@ I want to list my shop policies on my page, and be able to edit them if my polic
 
 *This is a diagram of how I think the nesting of my planned components will/should look*
 
-Root {
-  list-Store-Items{
-    show-Sale-Items{}
-    filter-Store-Items{}
-  }
-  edit-Store-Items{
-    add-Store-Item{}
-    remove-Store-Item{}
-  }
-  show-Item-Info{}
-  add-Review{}
-  remove-Review{}
-  favorite-Store{}
-  report-Store{}
-  list-Policies{}
-  edit-Policies{}
-  contact-Store-Owner{}
-}
+
+
+
+
+    Root {
+      list-Store-Items{
+        show-Sale-Items{}
+        filter-Store-Items{}
+      }
+      edit-Store-Items{
+        add-Store-Item{}
+        remove-Store-Item{}
+      }
+      show-Item-Info{}
+      add-Review{}
+      remove-Review{}
+      favorite-Store{}
+      report-Store{}
+      list-Policies{}
+      edit-Policies{}
+      contact-Store-Owner{}
+    }
