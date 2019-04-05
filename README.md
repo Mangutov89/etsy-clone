@@ -55,6 +55,15 @@ further testing and implementation
 2:00pm - 3:00pm:
 implementing and reworking to-do list code
 
+3:00pm - 4:00pm:
+refactoring item display code
+
+4:00pm - 5:00pm:
+bug fixing item display code
+
+8:00am - 8:30am:
+reading assignment goals and code from previous Friday
+
 ## Notes
 
 Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?
