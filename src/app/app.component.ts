@@ -7,7 +7,7 @@ import { Item } from './model/item.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Etsy Shop';
   test: number = 689
   selectedItem = null;
 

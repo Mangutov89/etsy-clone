@@ -1,4 +1,14 @@
-<div class="navBar">
-  <h1>this is a test navBar</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Etsy Shop</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>{{title}}</h1>
+  <router-outlet></router-outlet>
 </div>
-<app-store-items></app-store-items>
+
+<a routerLink="about">About This Seller</a>

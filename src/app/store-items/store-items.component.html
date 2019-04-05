@@ -1,2 +1,7 @@
-<h5>{{item.name}}</h5>
-<p>hi</p>
+<h2>Shop Items</h2>
+
+<div class="panel panel-default" *ngFor="let item of items">
+  <div class="panel-body">
+    <h3><em>{{item.name}}</em> ${{item.price}}</h3>
+  </div>
+</div>
