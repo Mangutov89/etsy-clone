@@ -61,8 +61,25 @@ refactoring item display code
 4:00pm - 5:00pm:
 bug fixing item display code
 
+Day 2
+<hr>
+
 8:00am - 8:30am:
 reading assignment goals and code from previous Friday
+
+8:30am - 9:00am:
+remove old component
+add new component for refactored code
+begin refactoring code
+
+9:00am - 10:00am:
+continue refactoring old code
+add multiple components and link them together
+
+10:00am - 11:00am:
+add routing between pages and dynamic routing for store items
+add temporary styling
+display information on dynamic pages
 
 ## Notes
 
@@ -92,7 +109,7 @@ I want to be able to add the stock amount to the store, and have the store autom
 I want to be able to remove reviews from my store if they are inaccurate or malicious
 I want to list my shop policies on my page, and be able to edit them if my policies change
 
-## Components
+<!-- ## Components
 
 *This is a diagram of how I think the nesting of my planned components will/should look*
 
@@ -113,4 +130,4 @@ Root {
   list-Policies{}
   edit-Policies{}
   contact-Store-Owner{}
-}
+} -->

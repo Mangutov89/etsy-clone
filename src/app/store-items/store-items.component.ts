@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { Item } from '../model/item.model'
 import { Router } from '@angular/router';
 
+import { ItemService } from '../item.service';
+
 @Component({
   selector: 'app-store-items',
   templateUrl: './store-items.component.html',
-  styleUrls: ['./store-items.component.css']
+  styleUrls: ['./store-items.component.css'],
+  providers: [ItemService]
 })
 export class StoreItemsComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private itemService: ItemService) { }
 
-  items: Item [] = [
-    new Item('Smelly Sock', 'The kind of smell that smells.. smelly', 14.95),
-    new Item('Inside-out T-shirt', 'Typical Monday attire', 249.99),
-    new Item('Icy Snow', '"Its the perfect texture for running"', .99)
-  ]
+  items: Item [];
+
 
   viewItem(clickedItem: Item) {
     this.router.navigate(['items', clickedItem.name]);
@@ -23,6 +23,7 @@ export class StoreItemsComponent implements OnInit {
 
 
   ngOnInit() {
+    this.items = this.itemService.getItems();
   }
 
 }
