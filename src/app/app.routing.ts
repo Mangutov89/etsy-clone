@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { StorepageComponent } from './storepage/storepage.component';
 import { AboutComponent } from './about/about.component';
-import { ItempageComponent } from './itempage/itempage.component'
+import { ItempageComponent } from './itempage/itempage.component';
+import { StoreOwnerComponent} from './store-owner/store-owner.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
   path: 'items/:name',
   component: ItempageComponent
+  },
+  {
+  path: 'owner-view',
+  component: StoreOwnerComponent
   }
 ];
 

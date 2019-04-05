@@ -13,6 +13,7 @@ import { StorepageComponent } from './storepage/storepage.component';
 import { ItempageComponent } from './itempage/itempage.component';
 import { ItemEditComponent } from './item-edit/item-edit.component';
 import { AboutComponent } from './about/about.component';
+import { StoreOwnerComponent } from './store-owner/store-owner.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,6 +30,7 @@ export const firebaseConfig = {
     ItempageComponent,
     ItemEditComponent,
     AboutComponent,
+    StoreOwnerComponent,
   ],
   imports: [
     BrowserModule,

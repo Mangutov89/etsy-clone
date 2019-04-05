@@ -1,0 +1,28 @@
+<app-storepage></app-storepage>
+<h3>Add new Item to Inventory</h3>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Item Information</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Item Name:</label>
+        <br>
+        <input #newName>
+
+      <div>
+        <label>Item Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+
+      <div>
+        <label>Item Price:</label>
+        <br>
+        <input type="number" #newPrice>
+      </div>
+        <button (click)="addItem(newName.value, newDescription.value, newPrice.value); newName.value=''; newDescription.value=''; newPrice.value=''">Add</button>
+    </div>
+  </div>
+</div>

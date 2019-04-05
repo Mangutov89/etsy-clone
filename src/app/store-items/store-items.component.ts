@@ -19,11 +19,9 @@ export class StoreItemsComponent implements OnInit {
     private itemService: ItemService
   ){}
 
-  items: Item [];
-
 
   viewItem(clickedItem: Item) {
-    this.router.navigate(['items', clickedItem.name]);
+    this.router.navigate(['items', clickedItem.$key]);
   };
 
 

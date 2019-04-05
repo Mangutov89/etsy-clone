@@ -15,12 +15,12 @@ export class ItemService {
     return this.items;
   }
 
-  // getItemByName(itemName){
-  //   for (var i = 0; i <= ITEMS.length - 1; i++) {
-  //     if (ITEMS[i].name === itemName) {
-  //       return ITEMS[i];
-  //     }
-  //   }
-  // }
+  pushItem(newItem: Item) {
+    this.items.push(newItem);
+}
+
+  getItemById(itemId){
+    return this.database.object('items/' + itemId)
+  }
 
 }

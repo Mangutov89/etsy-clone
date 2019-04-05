@@ -3,7 +3,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: solid 1px red;
 }
 
 .storeItem{

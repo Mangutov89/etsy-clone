@@ -12,7 +12,7 @@ import { ItemService } from '../item.service';
   providers: [ItemService]
 })
 export class ItempageComponent implements OnInit {
-  itemName: string;
+  itemId: string;
   itemToDisplay: Item;
 
   constructor(
@@ -23,9 +23,9 @@ export class ItempageComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.itemName = (urlParameters['name']);
+      this.itemId = (urlParameters['id']);
     });
-    this.itemToDisplay = this.itemService.getItemByName(this.itemName)
+    this.itemToDisplay = this.itemService.getItemById(this.itemId)
   }
 
 }
