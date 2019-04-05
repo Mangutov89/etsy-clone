@@ -1,6 +1,6 @@
 <h2>Shop Items</h2>
 <div class="storeItemContainer">
-  <div class="storeItem panel panel-default" *ngFor="let item of items" (click)="viewItem(item)">
+  <div class="storeItem panel panel-default" *ngFor="let item of items | async" (click)="viewItem(item)">
     <div class="panel-body">
       <h3><em>{{item.name}}</em> ${{item.price}}</h3>
     </div>

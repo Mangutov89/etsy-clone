@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Item } from '../model/item.model'
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 import { ItemService } from '../item.service';
 
@@ -11,6 +12,7 @@ import { ItemService } from '../item.service';
   providers: [ItemService]
 })
 export class StoreItemsComponent implements OnInit {
+  items: FirebaseListObservable<any[]>;
 
   constructor(
     private router: Router,

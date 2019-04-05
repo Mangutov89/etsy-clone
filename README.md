@@ -87,6 +87,9 @@ implement a service
 11:30am - 12:30pm:
 lunch
 
+12:30pm - 1:00pm:
+set up firebase
+add firebase keys
 
 ## Notes
 
