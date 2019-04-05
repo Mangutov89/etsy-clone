@@ -12,7 +12,10 @@ import { ItemService } from '../item.service';
 })
 export class StoreItemsComponent implements OnInit {
 
-  constructor(private router: Router, private itemService: ItemService) { }
+  constructor(
+    private router: Router,
+    private itemService: ItemService
+  ){}
 
   items: Item [];
 

@@ -81,6 +81,13 @@ add routing between pages and dynamic routing for store items
 add temporary styling
 display information on dynamic pages
 
+11:00am - 11:30am:
+implement a service
+
+11:30am - 12:30pm:
+lunch
+
+
 ## Notes
 
 Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?
