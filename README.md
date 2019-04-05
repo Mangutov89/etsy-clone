@@ -100,6 +100,10 @@ add functionality to add new items to store via owner page
 2:30pm - 3:00pm:
 add code to display item specific information from firebase on dynamic pages
 
+3:00pm - 4:00pm:
+add code to edit store items in owner view
+add code so that edit form only appears after a button press
+
 ## Notes
 
 Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?

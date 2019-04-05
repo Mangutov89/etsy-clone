@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Item } from '../model/item.model'
 import { Router } from '@angular/router';
 import { FirebaseListObservable } from 'angularfire2/database';
@@ -14,6 +14,7 @@ import { ItemService } from '../item.service';
 export class StoreItemsComponent implements OnInit {
   items: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  @Input() displayEdit: boolean = false;
 
   constructor(
     private router: Router,

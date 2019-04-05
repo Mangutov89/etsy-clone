@@ -7,4 +7,9 @@
 
 .storeItem{
   width: 30%;
+  text-align: center;
+}
+
+h3:hover{
+  color: gold;
 }
