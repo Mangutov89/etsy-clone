@@ -16,21 +16,4 @@ export class AppComponent {
       new Item("29 cents", "Useful", .71),
       new Item("Cheeseburger with no cheese", "Tasty", 6000)
     ];
-
-  editItem(clickedItem){
-    console.log('editItem function')
-    console.log(clickedItem)
-    this.selectedItem = clickedItem
-  }
-
-  addANewItem = null;
-  finish(){
-    console.log("finish adding a new Item function");
-    this.addANewItem = true;
-  }
-
-  finishedEditing(){
-    console.log('finishItem function')
-    this.selectedItem = null;
-  }
 }
