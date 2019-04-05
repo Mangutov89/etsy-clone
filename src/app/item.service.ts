@@ -12,4 +12,12 @@ export class ItemService {
     return ITEMS;
   }
 
+  getItemByName(itemName){
+    for (var i = 0; i <= ITEMS.length - 1; i++) {
+      if (ITEMS[i].name === itemName) {
+        return ITEMS[i];
+      }
+    }
+  }
+
 }

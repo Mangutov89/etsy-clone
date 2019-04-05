@@ -1,0 +1,14 @@
+{ "items": [{
+    "name": "Smelly Sock",
+    "description": "The kind of smell that smells.. smelly",
+    "price": "14.95"
+    }, {
+    "name": "Inside-out T-shirt",
+    "description": "Typical Monday Attire",
+    "price": "249.99"
+      }, {
+    "name": "Icy Snow",
+    "description": "Its the perfect texture for running",
+    "price": "0.99"
+  }]
+}

@@ -12,7 +12,8 @@ import { ItemService } from '../item.service';
   providers: [ItemService]
 })
 export class ItempageComponent implements OnInit {
-  itemName: string = null;
+  itemName: string;
+  itemToDisplay: Item;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,6 +25,7 @@ export class ItempageComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.itemName = (urlParameters['name']);
     });
+    this.itemToDisplay = this.itemService.getItemByName(this.itemName)
   }
 
 }
