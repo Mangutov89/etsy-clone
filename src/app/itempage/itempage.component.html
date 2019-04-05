@@ -1,5 +1,5 @@
 <a routerLink="">< Back To Store</a>
-<h1>{{itemToDisplay.name}}</h1>
-<h3>{{itemToDisplay.description}}</h3>
-<h4>${{itemToDisplay.price}}</h4>
+<h1>{{(itemToDisplay | async)?.name}}</h1>
+<h3>{{(itemToDisplay | async)?.description}}</h3>
+<h4>${{(itemToDisplay | async)?.price}}</h4>
 <button type="button" name="button">Add to cart</button>

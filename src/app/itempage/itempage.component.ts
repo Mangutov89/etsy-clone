@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 import { Item } from '../model/item.model';
 import { ItemService } from '../item.service';
@@ -13,7 +14,7 @@ import { ItemService } from '../item.service';
 })
 export class ItempageComponent implements OnInit {
   itemId: string;
-  itemToDisplay: Item;
+  itemToDisplay;
 
   constructor(
     private route: ActivatedRoute,

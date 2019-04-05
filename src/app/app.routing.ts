@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   component: AboutComponent
   },
   {
-  path: 'items/:name',
+  path: 'items/:id',
   component: ItempageComponent
   },
   {

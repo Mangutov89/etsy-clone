@@ -4,7 +4,9 @@
     <div class="panel-body">
       <h3><em>{{item.name}}</em> ${{item.price}}</h3>
       <div *ngIf=" currentRoute === '/owner-view'">
-        <h1>You're the owner</h1>
+        <p>{{item.description}}</p>
+        <button type="button" name="button">Delete Item</button>
+        <button type="button" name="button">Edit Item</button>
       </div>
     </div>
   </div>

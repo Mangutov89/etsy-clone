@@ -13,20 +13,21 @@ import { ItemService } from '../item.service';
 })
 export class StoreItemsComponent implements OnInit {
   items: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
   constructor(
     private router: Router,
     private itemService: ItemService
   ){}
 
+  ngOnInit() {
+    this.items = this.itemService.getItems();
+  }
 
-  viewItem(clickedItem: Item) {
+  viewItem(clickedItem) {
     this.router.navigate(['items', clickedItem.$key]);
   };
 
 
-  ngOnInit() {
-    this.items = this.itemService.getItems();
-  }
 
 }
