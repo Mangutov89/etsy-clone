@@ -8,12 +8,6 @@ import { Item } from './model/item.model';
 })
 export class AppComponent {
   title = 'Etsy Shop';
-  test: number = 689
-  selectedItem = null;
+  displayEdit: boolean = false;
 
-    masterItemList: Item [] = [
-      new Item("A left shoe", "Comfy", 250),
-      new Item("29 cents", "Useful", .71),
-      new Item("Cheeseburger with no cheese", "Tasty", 6000)
-    ];
 }

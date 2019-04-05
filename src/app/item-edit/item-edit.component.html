@@ -12,4 +12,4 @@
 <input [(ngModel)]="selectedItem.description">
 
 <button class="btn btn-danger" (click)="doubleCheck('Are you sure you want to delete?')">Delete Item</button>
-<button class="btn btn-success" (click)="finishAndHide()">Finish Editing</button>
+<button class="btn btn-success" (click)="displayEdit = 'false'; pushUpdate(selectedItem)">Push Update</button>

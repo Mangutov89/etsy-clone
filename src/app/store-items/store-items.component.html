@@ -2,11 +2,11 @@
 <div class="storeItemContainer">
   <div class="storeItem panel panel-default" *ngFor="let item of items | async">
     <div class="panel-body">
-      <h3 (click)="viewItem(item)"><em>{{item.name}}</em> ${{item.price}}</h3>
+      <h3 (click)="viewItem(item)"><em>{{item.name}}</em> <hr>${{item.price}}</h3>
       <div *ngIf=" currentRoute === '/owner-view'">
         <p>{{item.description}}</p>
         <hr>
-        <button type="button" (click)="displayEdit = 'true'">Edit Item</button>
+        <button type="button" (click)="displayEdit = 'true'" *ngIf="displayEdit !== 'true'">Edit Item</button>
         <div *ngIf="displayEdit === 'true'">
           <app-item-edit [selectedItem]='item'></app-item-edit>
         </div>

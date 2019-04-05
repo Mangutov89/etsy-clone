@@ -14,7 +14,6 @@ import { ItemService } from '../item.service';
 export class StoreItemsComponent implements OnInit {
   items: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-  @Input() displayEdit: boolean = false;
 
   constructor(
     private router: Router,
