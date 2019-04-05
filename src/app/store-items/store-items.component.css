@@ -1,0 +1,10 @@
+.storeItemContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.storeItem{
+  width: 30%;
+}
