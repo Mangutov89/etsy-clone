@@ -12,12 +12,14 @@ export class ItemEditComponent implements OnInit {
   @Output() displayToEdit;
 
 
-  doubleCheck(input){
-    return confirm(input);
-  };
-
   pushUpdate(itemToUpdate){
     this.itemService.updateItem(itemToUpdate);
+  }
+
+  pushDelete(itemToDelete){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.itemService.deleteItem(itemToDelete);
+    }
   }
 
   constructor(private itemService: ItemService) { }

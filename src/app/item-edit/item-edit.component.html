@@ -9,7 +9,7 @@
 <br>
 
 <label>New Item Price:</label>
-<input [(ngModel)]="selectedItem.description">
+<input [(ngModel)]="selectedItem.price">
 
-<button class="btn btn-danger" (click)="doubleCheck('Are you sure you want to delete?')">Delete Item</button>
+<button class="btn btn-danger" (click)="pushDelete(selectedItem)">Delete Item</button>
 <button class="btn btn-success" (click)="displayEdit = 'false'; pushUpdate(selectedItem)">Push Update</button>
