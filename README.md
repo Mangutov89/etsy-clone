@@ -142,26 +142,3 @@ I want to be able to edit the information related to my item such as display an 
 I want to be able to add the stock amount to the store, and have the store automatically stop allowing items to be purchased if they are out of stock
 I want to be able to remove reviews from my store if they are inaccurate or malicious
 I want to list my shop policies on my page, and be able to edit them if my policies change
-
-<!-- ## Components
-
-*This is a diagram of how I think the nesting of my planned components will/should look*
-
-Root {
-  list-Store-Items{
-    show-Sale-Items{}
-    filter-Store-Items{}
-  }
-  edit-Store-Items{
-    add-Store-Item{}
-    remove-Store-Item{}
-  }
-  show-Item-Info{}
-  add-Review{}
-  remove-Review{}
-  favorite-Store{}
-  report-Store{}
-  list-Policies{}
-  edit-Policies{}
-  contact-Store-Owner{}
-} -->
