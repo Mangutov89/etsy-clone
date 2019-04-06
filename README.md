@@ -107,6 +107,14 @@ add code so that edit form only appears after a button press
 4:00pm - 4:30pm:
 add code to push edited items to database
 
+## Plans
+
+Styling overhaul
+addition of Components
+shop items have images
+contact store owner gets pushed to the database, is visible to the Owner
+add things like 'instock' and 'onsale' to the item model
+
 ## Notes
 
 Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?
