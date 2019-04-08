@@ -1,28 +1,33 @@
-# CloneSite
+# Etsy Clone
+---
+
+#### By Joe Pritchett
+
+## Description
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
-## Development server
+This is a WIP clone of a store page from the website Etsy.
+
+## Installation and Setup
+
+#### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+#### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+#### Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+#### Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+#### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
@@ -61,8 +66,9 @@ refactoring item display code
 4:00pm - 5:00pm:
 bug fixing item display code
 
-Day 2
 <hr>
+
+Day 2
 
 8:00am - 8:30am:
 reading assignment goals and code from previous Friday
@@ -107,25 +113,36 @@ add code so that edit form only appears after a button press
 4:00pm - 4:30pm:
 add code to push edited items to database
 
-## Plans
+4:30pm - 5:00pm:
+add item deletion code
+fix bug in item update code
+update readme
 
+## Current Features
+
+The app uses multiple components that are linked together and able to pass data and actions between them
+The app uses routing to display different content to the admin than to an average user
+The app uses firebase to store information about items
+The admin is able to add, edit, and delete items, changes are reflected in firebase 
+
+## Planned Features
+
+Admin authentication
 Styling overhaul
-addition of Components
-shop items have images
-contact store owner gets pushed to the database, is visible to the Owner
-add things like 'instock' and 'onsale' to the item model
+Additional components for things like the navbar and site links
+Add images to store items
+Contacting the store owner pushes the users comments to the database, that information is visible to the Owner
+Add things like 'instock' and 'onsale' to the item model
 
 ## Notes
 
-Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why make this a separate page and not just have the navigation on the main page in place of the 'show all' button?
+Etsy lists a certain amount of items to the customer, with a show all button at the bottom, this button takes the user to a new page that lists store items with page navigation below the listed items. Why is this a separate page? The store page should just have the navigation buttons in place of the 'show all' button.
 
 
 ## User Stories
 
-
-Clone the etsy shop page.
-
-as a user and a customer, I want a list of the stores items
+As a user and a customer:
+I want a list of the stores items
 if I reach the bottom of the page, and there are more items on the shop, I want to be able to list those items
 if I click a store item, I want to see more information about that item displayed on the page, such as a description, options for the item (sizing, color) if any
 if I decide to buy an item, I want to be able to define how many of the item to buy
@@ -137,7 +154,8 @@ if I really dislike a shop, I want to be able to report it
 I want to see a version of the store that only lists the items on sale
 
 
-as a user and a store owner, I want to be able to list my items on my store
+As a user and a store owner:
+I want to be able to list my items on my store
 I want to be able to edit the information related to my item such as display an image for the item, edit the items price and whether or not it is on sale and the sale amount, the items shipping method, any options for the item (sizing, color)
 I want to be able to add the stock amount to the store, and have the store automatically stop allowing items to be purchased if they are out of stock
 I want to be able to remove reviews from my store if they are inaccurate or malicious
